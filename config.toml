@@ -14,7 +14,7 @@ hidden = false
 
 [editor.indent-guides]
 render = true
-character = "▏" # Some characters that work well: "▏", "┆", "┊", "⸽"
+character = "▏"
 
 [editor.lsp]
 display-messages = true
