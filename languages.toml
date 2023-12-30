@@ -1,0 +1,7 @@
+[[language]]
+name = "markdown"
+language-servers = ["marksman", "mdpls"]
+
+[language-server.mdpls]
+command = "/home/sebas/.cargo/bin/mdpls"
+config = { markdown.preview.auto = true }
