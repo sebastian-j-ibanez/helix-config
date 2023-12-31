@@ -1,7 +1,7 @@
 theme = "fleet_dark" 
 
 [editor]
-bufferline = "multiple"
+bufferline = "never"
 auto-pairs = false 
 
 [editor.cursor-shape]
@@ -18,6 +18,14 @@ character = "▏"
 
 [editor.lsp]
 display-messages = true
+
+[editor.statusline]
+left = ["mode", "spinner", "file-name"]
+right = ["version-control", "diagnostics", "selections", "position", "file-encoding", "file-line-ending", "file-type"]
+separator = "│"
+mode.normal = "󰚄 NORMAL"
+mode.insert = "󰙏 INSERT"
+mode.select = "󰩭 SELECT"
 
 [keys.normal]
 esc = ["collapse_selection", "keep_primary_selection"]
