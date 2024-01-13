@@ -1,4 +1,4 @@
-theme = "everocean" 
+theme = "tokyonight_transparent" 
 
 [editor]
 bufferline = "never"
