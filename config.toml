@@ -1,4 +1,4 @@
-theme = "everocean" 
+theme = "fleet_dark" 
 
 [editor]
 bufferline = "never"
