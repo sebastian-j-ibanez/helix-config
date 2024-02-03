@@ -1,4 +1,4 @@
-theme = "cyan_light" 
+theme = "dark_plus_transparent" 
 
 [editor]
 bufferline = "never"
