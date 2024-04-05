@@ -1,4 +1,4 @@
-theme = "cyan_light_transparent" 
+theme = "poimandres" 
 
 [editor]
 bufferline = "never"
