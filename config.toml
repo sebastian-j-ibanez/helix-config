@@ -1,4 +1,4 @@
-theme = "poimandres" 
+theme = "rose_pine_moon" 
 
 [editor]
 bufferline = "never"
@@ -20,9 +20,8 @@ character = "▏"
 display-messages = true
 
 [editor.statusline]
-left = ["mode", "separator","spinner", "file-name"]
+left = ["mode", "spinner", "file-name"]
 right = ["version-control", "diagnostics", "position", "file-type"]
-separator = "▾"
 mode.normal = "NORMAL"
 mode.insert = "INSERT"
 mode.select = "SELECT"
