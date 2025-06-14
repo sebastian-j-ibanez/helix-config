@@ -1,4 +1,0 @@
-inherits = "everforest_dark"
-"ui.background" = { bg = "everocean" }
-"ui.virtual.inlay-hint" = { fg = "grey0" }
-
