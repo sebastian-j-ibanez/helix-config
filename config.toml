@@ -1,8 +1,9 @@
-theme = "rose_pine_moon" 
+theme = "cyan_light"
 
 [editor]
 bufferline = "never"
-auto-pairs = true 
+auto-pairs = true
+shell = ["powershell.exe", ""]
 
 [editor.cursor-shape]
 insert = "bar"
