@@ -1,4 +1,4 @@
-theme = "cyan_light"
+theme = "zed_onelight"
 
 [editor]
 bufferline = "never"
