@@ -16,21 +16,33 @@ command = "gopls"
 [[language]]
 name = "rust"
 scope = "source.rust"
-injection-regex = "rs|rust"
 file-types = ["rs"]
 roots = ["Cargo.toml", "Cargo.lock"]
-shebangs = ["rust-script", "cargo"]
+language-servers = [ "rust-analyzer" ]
+persistent-diagnostic-sources = ["rustc", "clippy"]
 auto-format = true
+indent = { tab-width = 4, unit = "    " }
 comment-tokens = ["//", "///", "//!"]
 block-comment-tokens = [
     { start = "/*", end = "*/" },
       { start = "/**", end = "*/" },
         { start = "/*!", end = "*/" },
 ]
-language-servers = [ "rust-analyzer" ]
-indent = { tab-width = 4, unit = "    " }
-persistent-diagnostic-sources = ["rustc", "clippy"]
 
 [language-server.rust-analyzer]
 command = "rust-analyzer"
+
+# Zig
+[[language]]
+name = "zig"
+file-types = ["zig"]
+roots = ["build.zig", "build.zig.zon"]
+scope = "source.zig"
+language-servers = [ "zls" ]
+auto-format = true
+indent = { tab-width = 4, unit = "    " }
+comment-tokens = ["//", "///", "//!"]
+
+[language-server.zls]
+command = "zls"
 
