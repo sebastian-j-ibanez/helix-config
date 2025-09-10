@@ -46,3 +46,18 @@ comment-tokens = ["//", "///", "//!"]
 [language-server.zls]
 command = "zls"
 
+# Gleam
+[[language]]
+name = "gleam"
+scope = "source.gleam"
+file-types = ["gleam"]
+roots = ["gleam.toml"]
+language-servers = ["gleam_lsp"]
+auto-format = true
+indent = { tab-width = 2, unit = "  " }
+comment-tokens = ["//", "///"]
+block-comment-tokens = [{ start = "/*", end = "*/" }]
+
+[language-server.gleam_lsp]
+command = "gleam"
+args = ["lsp"]
