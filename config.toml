@@ -3,7 +3,6 @@ theme = "rasmus"
 [editor]
 bufferline = "never"
 auto-pairs = true
-shell = ["powershell.exe", ""]
 
 [editor.cursor-shape]
 insert = "bar"

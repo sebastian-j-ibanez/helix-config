@@ -1,17 +1,3 @@
-# Go
-[[language]]
-name = "go"
-scope = "scope.go"
-file-types = [ "go" ]
-roots = [ "go.mod" ]
-auto-format = true
-indent = { tab-width = 4, unit = "    " }
-language-servers = [ "gopls" ]
-formatter = { command = "gofmt", args = [""] }
-
-[language-server.gopls]
-command = "gopls"
-
 # Rust
 [[language]]
 name = "rust"
@@ -31,6 +17,56 @@ block-comment-tokens = [
 
 [language-server.rust-analyzer]
 command = "rust-analyzer"
+
+# Go
+[[language]]
+name = "go"
+scope = "scope.go"
+file-types = [ "go" ]
+roots = [ "go.mod" ]
+auto-format = true
+indent = { tab-width = 4, unit = "    " }
+language-servers = [ "gopls" ]
+formatter = { command = "gofmt", args = [""] }
+
+[language-server.gopls]
+command = "gopls"
+
+# C/C++
+[[language]]
+name = "c"
+scope = "source.c"
+file-types = ["c", "h"]
+language-servers = ["clangd"]
+auto-format = true
+indent = { tab-width = 4, unit = "    " }
+
+[[language]]
+name = "cpp"
+scope = "source.cpp"
+file-types = ["cpp", "cc", "cxx", "hpp", "hxx", "hh"]
+language-servers = ["clangd"]
+auto-format = true
+indent = { tab-width = 4, unit = "    " }
+
+[language-server.clangd]
+command = "clangd"
+
+# C#
+[[language]]
+name = "c-sharp"
+language-servers = ["csharp"]
+
+[language-server.csharp]
+command = "csharp-language-server"
+
+# Java
+[[language]]
+name = "java"
+language-servers = ["jdtls"]
+
+[language-server.jdtls]
+command = "jdtls"
 
 # Zig
 [[language]]
